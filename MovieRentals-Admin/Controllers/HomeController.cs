@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MovieRentals_Admin.Controllers
+namespace Domonic.Controllers
 {
     public class HomeController : Controller
     {
@@ -26,5 +26,6 @@ namespace MovieRentals_Admin.Controllers
 
             return View();
         }
+
     }
 }

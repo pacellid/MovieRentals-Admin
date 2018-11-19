@@ -1,6 +1,9 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: dodgerblue;
+    color: black;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +24,63 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+footer {
+    color: black;
+}
+
+.navbar-header {
+    border-bottom: 5px solid;
+    border-bottom-color: #633426 !important;
+}
+
+.form-container {
+    background-color: #e07557;
+    border-radius: 50px;
+    border: 4px solid;
+    padding-left: 60px;
+    padding-top: 10px;
+    margin-top: 30px;
+    color: #e8d54a;
+    border-color: #633426;
+    text-shadow: 1px 1px #633426;
+}
+
+.navbar-brand {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px #633426;
+    color: #e07557 !important;
+}
+
+.checkbox {
+    font-size: 20px;
+    font-family: 'Spicy Rice', cursive;
+}
+
+.btn {
+    color: #e07557;
+    font-size: 20px;
+    background-color: #633426;
+    margin-bottom: 5px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #e07557;
+}
+
+.jumbotron {
+    margin-top: 15px;
+    background-image: url(Images/movies.jpg);
+    background-blend-mode: overlay;
+    background-color: #e07557;
+    border: 2px solid;
+    font-family: 'Spicy Rice', cursive;
+    text-shadow: 2px 2px #e07557;
+}
+
+.col-md-4 {
+    font-family: 'Spicy Rice', cursive;
 }

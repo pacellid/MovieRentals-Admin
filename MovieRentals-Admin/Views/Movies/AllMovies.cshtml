@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "AllMovies";
+}
+
+<h2>AllMovies</h2>
+
+@{ 
+    foreach (var movie in ViewBag.Movies)
+    {
+        <p>movie.MovieTitle</p>
+    }
+}
