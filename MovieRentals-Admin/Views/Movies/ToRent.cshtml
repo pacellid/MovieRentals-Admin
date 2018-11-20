@@ -1,5 +1,4 @@
-﻿@model Domonic.Models.MovieModel
-
+﻿
 @*
     create a form,
     a list of checkboxes where each checkbox is a movie from the "movies" List,
@@ -10,19 +9,19 @@
 <div class="form-container">
     @using (Html.BeginForm("ToRent", "Movies"))
     {
-        foreach (var item in Model.AvailableMovies)
+        foreach (var movie in ViewBag.MoviesToRent)
         {
             <div class="checkbox">
                 <label>
                     <input type="checkbox"
                            name="SelectedMovies"
-                           value="@item.Value" /> @item.Text 
-                    </label>
-                </div>
-        }
-            <div class="submit-button">
-                <input class="btn" type="submit" value="Rent Movies" />
+                           value="@movie.MovieTitle">@movie.MovieTitle
+                </label>
             </div>
+        }
+        <div class="submit-button">
+            <input class="btn" type="submit" value="Rent Movies" />
+        </div>
     }
 
-</div >
+</div>
