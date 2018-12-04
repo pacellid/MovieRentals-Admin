@@ -10,12 +10,9 @@ namespace Domonic.Models
 {
     public class Movie
     { 
-            public String MovieTitle { get; set; }
-
-            [Key]
-            public int MovieId { get; set; }
-            public int Year { get; set; }
-            
-
+        [Key]
+        public int MovieId { get; set; }
+        public String MovieTitle { get; set; }
+        public int MovieYear { get; set; }
     }
 }

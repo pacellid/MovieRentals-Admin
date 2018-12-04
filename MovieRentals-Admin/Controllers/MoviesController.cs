@@ -20,7 +20,7 @@ namespace Domonic.Controllers
 
         public ActionResult AllMovies()
         {
-            ViewBag.Movies = db.Movies.ToList();
+            ViewBag.AvailableMovies = db.Movies.ToList();
             return View();
         }
 

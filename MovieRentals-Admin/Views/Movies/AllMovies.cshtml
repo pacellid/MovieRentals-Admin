@@ -6,8 +6,21 @@
 <h2>AllMovies</h2>
 
 @{ 
-    foreach (var movie in ViewBag.Movies)
+    foreach (var movie in ViewBag.AvailableMovies)
     {
-        <p>@movie.MovieTitle</p>
+        <div class="all-movies-name">
+            <p>@movie.MovieTitle</p>       
+        </div>
+        <div class="all-movies-image">
+            @{
+                string modifiedTitle = movie.MovieTitle.Replace(" ", "");
+                modifiedTitle = modifiedTitle.Replace(":", "");
+                modifiedTitle = modifiedTitle.ToLower();
+                string s = "~/Content/Images/" + modifiedTitle + ".jpg";
+            }
+            <img src="@s" />
+        </div>
+
+
     }
 }

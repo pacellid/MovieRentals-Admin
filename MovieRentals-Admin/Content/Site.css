@@ -105,3 +105,11 @@ footer {
     display: none;
     position: absolute;
 }
+
+.all-movies-name {
+    
+}
+
+.all-movies-image {
+    float: right;
+}
