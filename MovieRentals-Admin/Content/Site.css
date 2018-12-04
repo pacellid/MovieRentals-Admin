@@ -54,6 +54,18 @@ footer {
     color: #e07557 !important;
 }
 
+.jumbotron {
+    margin-top: 15px;
+    background-image: url(Images/movies.jpg);
+    background-blend-mode: overlay;
+    background-color: #e07557;
+    border: 2px solid;
+    font-family: 'Spicy Rice', cursive;
+    text-shadow: 2px 2px #e07557;
+}
+
+/*TO RENT*/
+
 .checkbox {
     font-size: 20px;
     font-family: 'Spicy Rice', cursive;
@@ -71,45 +83,24 @@ footer {
     color: #e07557;
 }
 
-.jumbotron {
-    margin-top: 15px;
-    background-image: url(Images/movies.jpg);
-    background-blend-mode: overlay;
-    background-color: #e07557;
-    border: 2px solid;
-    font-family: 'Spicy Rice', cursive;
-    text-shadow: 2px 2px #e07557;
-}
 
 .col-md-4 {
     font-family: 'Spicy Rice', cursive;
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
+/*ALL MOVIES*/
+
+.all-movies-title {
+    font-style: oblique;
+    font-size: 20px;
 }
 
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+p.movie-name {
+    font-size: 200px;
+    font-family: 'Spicy Rice', cursive;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-}
-
-.all-movies-name {
-    
-}
-
-.all-movies-image {
+.image-movie {
     float: right;
+    border-bottom: 2px solid white;
 }

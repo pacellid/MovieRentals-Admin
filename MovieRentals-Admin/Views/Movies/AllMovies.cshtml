@@ -1,26 +1,21 @@
 ﻿
-@{
-    ViewBag.Title = "AllMovies";
-}
+<h2 class="all-movies-title">All Movies</h2>
+<div class="form-container">
+    @{
+        foreach (var movie in ViewBag.AvailableMovies)
+        {
 
-<h2>AllMovies</h2>
-
-@{ 
-    foreach (var movie in ViewBag.AvailableMovies)
-    {
-        <div class="all-movies-name">
-            <p>@movie.MovieTitle</p>       
-        </div>
-        <div class="all-movies-image">
-            @{
-                string modifiedTitle = movie.MovieTitle.Replace(" ", "");
-                modifiedTitle = modifiedTitle.Replace(":", "");
-                modifiedTitle = modifiedTitle.ToLower();
-                string s = "~/Content/Images/" + modifiedTitle + ".jpg";
-            }
-            <img src="@s" />
-        </div>
-
-
+            <p class="movie-name">@movie.MovieTitle</p>
+            <div class="all-movies-image">
+                @{
+                    string modifiedTitle = movie.MovieTitle.Replace(" ", "");
+                    modifiedTitle = modifiedTitle.Replace(":", "");
+                    modifiedTitle = modifiedTitle.Replace("'", "");
+                    modifiedTitle = modifiedTitle.ToLower();
+                    string s = "../Content/Images/" + modifiedTitle + ".jpg";
+                }
+                <img src="@s" width="240" height="300" class="image-movie" />
+            </div>
+        }
     }
-}
+</div>

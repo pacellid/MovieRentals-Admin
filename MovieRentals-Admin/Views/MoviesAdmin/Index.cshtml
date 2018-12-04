@@ -8,7 +8,7 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary-xs"});
 </p>
 <table class="table">
     <tr>
@@ -16,7 +16,7 @@
             @Html.DisplayNameFor(model => model.MovieTitle)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Year)
+            @Html.DisplayNameFor(model => model.MovieYear)
         </th>
         <th></th>
     </tr>
@@ -27,12 +27,12 @@
             @Html.DisplayFor(modelItem => item.MovieTitle)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Year)
+            @Html.DisplayFor(modelItem => item.MovieYear)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MovieId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MovieId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MovieId })
+            @Html.ActionLink("Edit", "Edit", new { id = item.MovieId }, new { @class = "btn-xs btn-primary" }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MovieId }, new { @class = "btn-xs btn-primary" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MovieId }, new { @class = "btn-xs btn-primary" })
         </td>
     </tr>
 }
