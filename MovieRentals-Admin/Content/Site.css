@@ -26,13 +26,14 @@ textarea {
     max-width: 280px;
 }
 
+/*_Layout.cshtml*/
 footer {
     color: black;
 }
 
 .navbar-header {
     border-bottom: 5px solid;
-    border-bottom-color: #633426 !important;
+    border-bottom-color: #633426;
 }
 
 .form-container {
@@ -51,7 +52,7 @@ footer {
     font-family: 'Pattaya', sans-serif;
     font-size: 40px;
     text-shadow: 2px 2px #633426;
-    color: #e07557 !important;
+    color: #e07557;
 }
 
 .jumbotron {
@@ -63,9 +64,10 @@ footer {
     font-family: 'Spicy Rice', cursive;
     text-shadow: 2px 2px #e07557;
 }
+/*INDEX*/
+
 
 /*TO RENT*/
-
 .checkbox {
     font-size: 20px;
     font-family: 'Spicy Rice', cursive;
@@ -84,23 +86,48 @@ footer {
 }
 
 
-.col-md-4 {
-    font-family: 'Spicy Rice', cursive;
-}
 
 /*ALL MOVIES*/
 
+#container-allmovies {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    padding: 12px;
+    background-color: #e07557;
+    border: solid 4px #633426;
+    border-radius: 40px;
+    color: #e8d54a;
+    text-shadow: 4px 4px 4px #633426;
+}
+
 .all-movies-title {
-    font-style: oblique;
     font-size: 20px;
 }
 
-p.movie-name {
-    font-size: 200px;
+.movie-name {
+    font-size: 50px;
     font-family: 'Spicy Rice', cursive;
+    margin-top: 0px;
+    text-align: center;
 }
 
 .image-movie {
-    float: right;
-    border-bottom: 2px solid white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 10px solid white;
 }
+
+.movie-year {
+    text-align: center;
+    font-size: 40px;
+}
+
+.movie-id {
+    margin-top: 20px;
+    text-align: center;
+    float: left;
+    font-size: 24px;
+    font-family: 'Pattaya', sans-serif;
+}
+

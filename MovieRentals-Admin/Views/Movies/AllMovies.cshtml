@@ -1,21 +1,30 @@
 ﻿
-<h2 class="all-movies-title">All Movies</h2>
-<div class="form-container">
-    @{
-        foreach (var movie in ViewBag.AvailableMovies)
-        {
 
-            <p class="movie-name">@movie.MovieTitle</p>
-            <div class="all-movies-image">
-                @{
-                    string modifiedTitle = movie.MovieTitle.Replace(" ", "");
-                    modifiedTitle = modifiedTitle.Replace(":", "");
-                    modifiedTitle = modifiedTitle.Replace("'", "");
-                    modifiedTitle = modifiedTitle.ToLower();
-                    string s = "../Content/Images/" + modifiedTitle + ".jpg";
-                }
-                <img src="@s" width="240" height="300" class="image-movie" />
-            </div>
-        }
+<div class="col-md-12" id="container-allmovies">
+    @foreach (var movie in ViewBag.AvailableMovies)
+    {
+        string modifiedTitle = movie.MovieTitle.Replace(" ", "");
+        modifiedTitle = modifiedTitle.Replace(":", "");
+        modifiedTitle = modifiedTitle.Replace("'", "");
+        modifiedTitle = modifiedTitle.ToLower();
+        string s = "../Content/Images/" + modifiedTitle + ".jpg";
+
+
+        <div class="movie-id">
+            <p>@movie.MovieId</p>
+        </div>
+
+        <div class="movie-name">
+            <p>@movie.MovieTitle</p>
+        </div>
+
+        <div class="movie-year">
+            <p>@movie.MovieYear</p>
+        </div>
+
+        <div class="image-movie">
+            <img src="@s" width="240" height="300" />
+        </div>
+
     }
 </div>
